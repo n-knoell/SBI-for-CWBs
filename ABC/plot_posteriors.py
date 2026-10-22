@@ -39,7 +39,7 @@ ABC_DIRECTORY = os.path.dirname(os.path.abspath(__file__))
 REPOSITORY_DIRECTORY = os.path.dirname(ABC_DIRECTORY)
 RESULTS_DIRECTORY = os.path.join(ABC_DIRECTORY, "results")
 FIGURES_DIRECTORY = os.path.join(ABC_DIRECTORY, "figures")
-REFERENCE_OBSERVATION_DIRECTORY = os.path.join(REPOSITORY_DIRECTORY, "SBI", "CWB_examples")
+REFERENCE_OBSERVATION_DIRECTORY = os.path.join(REPOSITORY_DIRECTORY, "SBI", "data", "reference_observations")
 
 
 def main():
