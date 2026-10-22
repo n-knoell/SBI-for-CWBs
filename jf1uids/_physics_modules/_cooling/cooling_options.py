@@ -17,7 +17,7 @@ NEURAL_NET_COOLING_WITH_DENSITY = 4
 EXPLICIT_COOLING = 1
 IMPLICIT_COOLING = 2
 
-sep_in_au = 20  #upper-limit: 80, lower-limit: 5
+sep_in_au = 10.0  #upper-limit: 80, lower-limit: 5
 length_temp = sep_in_au / 0.1  # before
 mass_temp = 0.01 / 1  #1e-4
 # velocity_temp = length_temp / 2   #40

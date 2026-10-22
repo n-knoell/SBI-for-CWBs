@@ -1,6 +1,7 @@
 import os
 from autocvd import autocvd
-autocvd(num_gpus = 1, interval=1)
+# autocvd(num_gpus = 1, interval=1)
+os.environ["CUDA_VISIBLE_DEVICES"] = "3" 
 
 import pickle
 import torch
@@ -15,7 +16,7 @@ from jf1uids import CodeUnits
 from sbi.inference import NPE
 from sbi.utils import BoxUniform
 import torch.nn as nn
-from helper import DensityEmbeddingComplexTemporal, DensityEmbeddingPerFrameTemporal, DensityEmbeddingPerFrameTemporalAdv
+from helper import DensityEmbeddingComplexTemporal, DensityEmbeddingPerFrameTemporalAdv
 from sbi.neural_nets import posterior_nn
 
 from astropy import units as u
@@ -66,7 +67,7 @@ def add_fresh_noise(x_clean_torch, seed, chunk=500):
 ##load simulations
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-simulations = torch.load("simulations_clean_TEST.pt", map_location="cpu")  # <- point this at the CLEAN combined file
+simulations = torch.load("simulations_clean_74.pt", map_location="cpu")  # <- point this at the CLEAN combined file
 theta = simulations.get("theta")
 x_clean = simulations.get("x")
 x_clean = x_clean[:, 1:, :, :]

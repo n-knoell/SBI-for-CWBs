@@ -189,3 +189,7 @@ cython_debug/
 
 .venv
 /poetry.toml
+
+SBI/sbi-logs/
+*.pt
+*.pkl
