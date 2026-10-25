@@ -29,7 +29,7 @@ SBI/
 ├── data/                        simulation banks, test sets, mlr0_array.npy, reference_observations/
 ├── models/                      trained posteriors (*.pkl)
 ├── results/                     optuna study database, calibration metrics
-└── figures/                     posteriors/, calibration/, optuna/, reference_observations/
+├── figures/                     posteriors/, calibration/, optuna/, reference_observations/
 ```
 
 ## Data files not in the repository

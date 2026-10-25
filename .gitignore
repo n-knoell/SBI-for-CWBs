@@ -193,3 +193,5 @@ cython_debug/
 SBI/sbi-logs/
 *.pt
 *.pkl
+
+SBI/docs/sbi_pipeline/
